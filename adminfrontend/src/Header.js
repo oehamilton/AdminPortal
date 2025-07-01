@@ -19,12 +19,12 @@ function Header({ toggleSidebar, isSidebarOpen }) {
         </button>
         {/* Dropdown Menu (Bubble Overlay) */}
         {isSidebarOpen && (
-          <div className="absolute left-0 top-full mt-2 w-64 bg-blue-800 text-white rounded-lg shadow-lg animate-slide-down z-10">
+          <div className="absolute left-0 top-full mt-2 w-64 bg-gray-800 text-white rounded-lg shadow-lg animate-slide-down z-10">
             <ul className="p-2">
               <li>
                 <Link
                   to="/users"
-                  className="block px-4 py-2 hover:bg-blue-700 rounded transition-colors"
+                  className="block px-4 py-2 hover:bg-gray-700 rounded transition-colors"
                   onClick={toggleSidebar}
                 >
                   Users
@@ -34,7 +34,7 @@ function Header({ toggleSidebar, isSidebarOpen }) {
               <li>
                 <Link
                   to="/sms"
-                  className="block px-4 py-2 hover:bg-blue-700 rounded transition-colors"
+                  className="block px-4 py-2 hover:bg-gray-700 rounded transition-colors"
                   onClick={toggleSidebar}
                 >
                   SMS
